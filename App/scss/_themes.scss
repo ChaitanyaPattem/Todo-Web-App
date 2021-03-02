@@ -1,0 +1,48 @@
+.root {
+  // light theme
+  $VeryLightGray: hsl(0, 0%, 98%);
+  $VeryLightGrayishBlue: hsl(236, 33%, 92%);
+  $LightGrayishBlue: hsl(233, 11%, 84%);
+  $DarkGrayishBlue: hsl(236, 9%, 61%);
+  $VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+  $Mobilelight: url('/images/bg-mobile-light.jpg');
+  $Desktoplight: url('/images/bg-desktop-light.jpg');
+  $Icon-light: url('/images/icon-moon.svg');
+
+  // dark theme
+  $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  $LightGrayishBlue: hsl(234, 39%, 85%);
+  $LightGrayishBlue: hsl(236, 33%, 92%); //hover
+  $DarkGrayishBlue: hsl(234, 11%, 52%);
+  $VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+  $VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+  $Mobiledark: url('/images/bg-mobile-dark.jpg');
+  $Desktopdark: url('/images/bg-desktop-dark.jpg');
+  $Icon-dark: url('/images/icon-sun.svg');
+}
+
+.light-mode {
+  $bg: var($VeryLightGrayishBlue);
+  $bgfont: var($VeryLightGray);
+  $lightfontColor: var($LightGrayishBlue);
+  $mediumfontColor: var($DarkGrayishBlue);
+  $darkfontColor: var($VeryDarkGrayishBlue);
+  $borderColor: var($VeryDarkGrayishBlue);
+  $moblieimg: var($Mobilelight);
+  $desktopimg: var($Desktoplight);
+  $fill: var($fill_light);
+  $icon: var($Icon-light);
+}
+
+.dark-mode {
+  $bg: var($VeryDarkBlue);
+  $bgfont: var($VeryDarkDesaturatedBlue);
+  $lightfontColor: var($VeryDarkGrayishBlue);
+  $mediumfontColor: var($DarkGrayishBlue);
+  $darkfontColor: var($LightGrayishBlue);
+  $borderColor: var($LightGrayishBlue);
+  $moblieimg: var($Mobiledark);
+  $desktopimg: var($Desktopdark);
+  $fill: var($fill_dark);
+  $icon: var($Icon-dark);
+}

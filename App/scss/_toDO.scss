@@ -1,0 +1,130 @@
+.toDO {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  transition: 2s ease-in-out;
+
+  & #form_in {
+    display: flex;
+    align-items: center;
+    background-color: $VeryLightGray;
+    min-height: 2rem;
+    transition: 2s ease-in-out;
+
+    & span {
+      border-radius: 50%;
+      height: 21px;
+      width: 26px;
+      border: 1px solid $DarkGrayishBlue;
+      margin-left: 3vh;
+    }
+
+    & input {
+      margin-left: 3vh;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
+  & .activities {
+    transition: 2s ease-in-out;
+    align-items: center;
+    margin: 0;
+
+    & .list {
+      align-items: center;
+      margin-left: 0;
+      padding: 0;
+
+      & .circle {
+        border-radius: 50%;
+        height: 20px;
+        width: 22px;
+        border: 1px solid $DarkGrayishBlue;
+        margin-left: 3vh;
+      }
+
+      & .listItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      & .sent {
+        margin-left: 1rem;
+        font-size: 14px;
+        justify-content: start;
+      }
+      
+      & .checkIn {
+        border-radius: 50%;
+        height: 20px;
+        width: 22px;
+        border: 1px solid $DarkGrayishBlue;
+        margin-left: 1rem;
+        background: url("/images/icon-check.svg") no-repeat center, linear-gradient(to right ,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+      }
+
+      & .close {
+        width: 13px;
+        height: 13px;
+        margin-right: .75rem;
+        justify-self: end;
+        cursor: pointer;
+      }
+      & .close:hover {
+        background-image: url("/images/icon-cross.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      & .lineThrough {
+        text-decoration: line-through;
+        opacity: .5;
+      }
+
+      & .itemsList {
+        display: flex;
+        align-items: center;
+        background-color: $VeryLightGray;
+        width: 100%;
+        list-style-type: none;
+        margin-top: .6rem;
+        font: 700;
+        transition: 2s ease-in-out;
+      }
+    }
+  }
+
+  & .toDO_down {
+    display: flex;
+    transition: 2s ease-in-out;
+    background-color: $VeryLightGray;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 1.25rem;
+
+    & p {
+      margin: 0 3vh;
+      font: 9px 700;
+      transition: 2s ease-in-out;
+    }
+
+    & .status {
+      display: flex;
+      align-items: center;
+    }
+
+    & a {
+      margin: 0 2vh;
+      transition: 2s ease-in-out;
+      font-size: 10px;
+      font-weight: 700;
+      color: $VeryDarkGrayishBlue;
+      text-decoration: none;
+    }
+  }
+}

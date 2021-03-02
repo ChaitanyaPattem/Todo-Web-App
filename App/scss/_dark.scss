@@ -1,0 +1,177 @@
+.dark-theme {
+  background-image: url('/images/bg-desktop-dark.jpg');
+  background-color: $VeryDarkDesaturatedBlue;
+  transition: 2s ease-in-out;
+  .header {
+    & h1 {
+      color: $LightGrayishBlue;
+      transition: 2s ease-in-out;
+    }
+    & i {
+      background-image: url('/images/icon-sun.svg');
+      transition: 2s ease-in-out;
+    }
+  }
+  .toDO {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in-out;
+  
+    & #form_in {
+      display: flex;
+      align-items: center;
+      background-color: $VeryDarkGrayishBlue;
+      min-height: 2rem;
+      transition: 2s ease-in-out;
+  
+      & span {
+        border-radius: 50%;
+        height: 21px;
+        width: 26px;
+        border: 1px solid $DarkGrayishBlue;
+        margin-left: 3vh;
+      }
+  
+      & input {
+        margin-left: 3vh;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: $LightGrayishBlue;
+      }
+    }
+  
+    & .activities {
+      transition: 2s ease-in-out;
+      align-items: center;
+      margin: 0;
+  
+      & .list {
+        align-items: center;
+        margin-left: 0;
+        padding: 0;
+        transition: 2s ease-in-out;
+        width: 100%;
+  
+        & .circle {
+          border-radius: 50%;
+          height: 20px;
+          width: 22px;
+          border: 1px solid $DarkGrayishBlue;
+          margin-left: 3vh;
+        }
+
+        & .listItems {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+
+        & .sent {
+          margin-left: 3vh;
+          font-size: 14px;
+          justify-self: start;
+        }
+        
+        & .checkIn {
+          border-radius: 50%;
+          height: 20px;
+          width: 22px;
+          border: 1px solid $DarkGrayishBlue;
+          margin-left: 3vh;
+          background: url("/images/icon-check.svg") no-repeat center, linear-gradient(to right ,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+        }
+        
+        & .listItems {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        & .close {
+          width: 13px;
+          height: 13px;
+          margin-right: 2vh;
+          margin-left: 2vh;
+          align-items: end;
+          cursor: pointer;
+        }
+        & .close:hover {
+          background-image: url("/images/icon-cross.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          color: $LightGrayishBlue;
+          cursor: pointer;
+        }
+        & .lineThrough {
+          text-decoration: line-through;
+          opacity: .5;
+        }
+  
+        & .itemsList {
+          display: flex;
+          align-items: center;
+          background-color: $VeryDarkGrayishBlue;
+          width: 100%;
+          color: $LightGrayishBlue;
+          list-style-type: none;
+          margin-top: 1vh;
+          transition: 2s ease-in-out;
+        }
+      }
+    }
+  }
+  
+  & .toDO_down {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    transition: 2s ease-in-out;
+    background-color: $VeryDarkGrayishBlue;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4vh;
+
+    & ul {
+      display: flex;
+      padding: 0;
+      list-style-type: none;
+    }
+    
+    & p {
+      margin: 0 3vh;
+      font: 9px 700;
+      transition: 2s ease-in-out;
+      color: $LightGrayishBlue;
+    }
+
+    & .status {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+
+
+    & a {
+      margin: 0 2vh;
+      transition: 2s ease-in-out;
+      color: $LightGrayishBlue;
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+  & .toDO_drop {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      color: $LightGrayishBlue;
+    }
+  }
+}

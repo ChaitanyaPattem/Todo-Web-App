@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/App/scss/styles.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="light-mode">
+  <section class="toDO">
+    <div class="header">
+      <h1 class="title">TODO</h1>
+      <i class="title_cta" onClick="myFunction()"></i>
+    </div>
+    <form id="form_in">
+      <span class="circle"></span>
+     <input type="text" class="sent" placeholder="Your ToDo's" class="todo_input"/>
+    </form>
+    <div class="activities">
+      <ul class="list" id="itemsLists"></ul>
+      <ul class="toDO_down">
+        <li class="status">
+        </li>
+        <li class="status" data-type="all">
+          <a class="status-Filter all" href="#">All</a>
+        </li>
+        <li class="status" data-type="active">
+          <a class="status-Filter active" href="#">Active</a>
+        </li>
+        <li class="status" data-type="completed">
+          <a class="status-Filter completed" href="#">Completed</a>
+        </li>
+        <li class="status" data-type="clearCompleted">
+          <a class="status-Filter clearCompleted" href="#">Clear Completed</a>
+        </li>
+      </ul>
+      <ul class="toDO_drop">
+        <p>Drag and drop to reorder items</p>
+      </ul>
+    </div>
+  </section>
+  <!--
+  Todo
+
+  Add dynamic number -- items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+  <script src="App/js/script.js"></script>
+  <script class="">
+    function myFunction(){
+      var element =document.body;
+      element.classList.toggle("dark-theme");
+    }
+  </script>
+</body>
+</html>

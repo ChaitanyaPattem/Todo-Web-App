@@ -1,0 +1,24 @@
+.header {
+  min-height: 10vh;
+  display: flex;
+  font: Josefin sans;
+  justify-content: space-between;
+
+  & h1 {
+    letter-spacing: 16px;
+    padding: 2px;
+    justify-self: center;
+    align-content: center;
+    transition: 2s ease-in-out;
+  }
+
+  & i {
+    padding: 2px;
+    width: 4rem;
+    background-image: $icon-light;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+  }
+}
